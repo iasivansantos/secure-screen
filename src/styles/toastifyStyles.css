@@ -1,0 +1,86 @@
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #1ccb76;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #d34848;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+
+  --toastify-toast-width: min-content;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 58px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: "DM Sans", sans-serif;
+  --toastify-z-index: 9999;
+
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+
+  /* Used only for colored theme */
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+
+  /* Used when no type is provided */
+  /* toast("**hello**") */
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  /* Used when no type is provided */
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+}
+
+.Toastify__toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.Toastify__toast {
+  max-width: min-content;
+}
+
+.Toastify__close-button {
+  align-self: center;
+}
+
+.Toastify__toast-body {
+  padding: 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.Toastify__toast-icon {
+  margin-right: 16px;
+}
+
+.Toastify__close-button {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.Toastify__close-button svg {
+  width: 18px;
+  height: 18px;
+}
